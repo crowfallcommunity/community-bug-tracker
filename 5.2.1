@@ -1,0 +1,38 @@
+General:
+
+Update to skill tooltip so parent tree names don't extend past the edge of the tooltip.
+Completely removed all fog settings in the Graphics > Atmosphere section. This fixes the excessive fog issue as the default slider range of 0-100 was clamping the fog distance value (which is 512 set in-editor).
+Map:
+
+Fixed an issue when opening the Map after using a power will freeze the power's visible cooldown.
+Fixed an issue with the map that caused the power bar to decrease in size. 
+Update to skill tooltip so parent tree names don't extend past the edge of the tooltip.
+Leaving a takeover window while in combat mode will now return the power bar to its combat state.
+Building Placement Tool:
+
+When placing a building, the ghost for that building now also creates the ghosts for all contained buildings (attachables that were socketed when the deed was picked up).
+Ghost buildings now don't stick around if you spam Escape while clicking on a deed.
+Classes:
+
+Druid: 
+
+Shroud of Darkness won't stun you if you initiate damage on yourself, for example by falling.
+Templar: 
+
+Devotion won't heal damage initiated by yourself, for example by falling.
+Known Issues:
+
+Durability in crafted items is not properly carrying up the crafting chain.
+Non Ranger classes lack bow animations. All bow related disciplines will remain inactive until they do.
+Bard Speed Song cancels when entering combat.
+Bard Speed Song remains at combat buff amounts if the buff was placed on you and you were in combat mode then went into non combat movement speed (waiting on race/class split to fix this one).
+Vessel inventory objects can not be used at a Temple.
+Weapon disciplines that grant weapon equips will not be fully functional until animations are added. 
+Power adjustments have been made but updates to tooltips are still in process. Text descriptions may not completely coincide with their current functionality.
+Character Carousel has been disabled from the front end menu for now.
+Sizing and rotation on harvesting tools during harvesting animations are incorrect. 
+UI bug: Sometimes when a player logs in the Chicken Ticker (Hunger Meter) below the health bar appears incorrectly. 
+Power Cost Multiplier issues with dual wield weapons are present. Currently investigating and working on improvements. 
+Final Power Cost Multiplier is not properly calculating gains from skill trees.
+Legionnaires now have Noble Purpose passive granted by default. This is a known issue and should be fixed next update.
+Frame rate performance is lower than ideal. 
