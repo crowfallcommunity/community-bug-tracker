@@ -1,0 +1,144 @@
+General:
+
+    Campaign list now automatically updates. This will happen every 30 seconds when a scenario isn't selected, or when pages are changed.
+    Added a stats fix for child stats affected by skill training. The amount of training child stats was off by a few points, but should now be fixed. 
+    Adjusted Guinecean harvesting animations. 
+    Fixed a bug in which the constitution bonus did not get added to the HP total when re-choosing the same vessel type. This means for example that a knight gains 5 HP per constitution point, increasing its base HP by 27 * 5.
+    New Settings and ESC menu has been added. 
+    Fixed a bug where mouse sensitivity is incorrect when changing from the settings panel.
+    Fixed the group member UI to show the correct faction on joining group, and whenever the group member's faction changes.
+    A more elaborate description for Tyranny maps have been added to the campaign info pane to better explain the rule sets. 
+    Fixed an issue with Public EK’s not displaying in the kingdoms list.
+    Updated the look of Interaction Prompts. 
+
+Map Tool:
+
+    Support for Maps in Campaign and EK Worlds has been added. Press “M” to view map and current position. Press “M” to close map window.
+    Fog of War (White Blocks) appear on the map until the area is fully discovered. 
+    Camera zoom level for the EK Tool and Map is now persisted. When you re-open either of those windows they should be at the zoom level you left them at.
+    View for map in EK Tool and Map Tool now centers on the player's position.
+
+Skill Trees:
+
+    First pass on Skill Tree interface updates have been added, including more detail on current skill in training. To see more info “Ctrl” key will now expand the selected skill’s tooltip.
+    Fixed issue where crafting skills were capping at 10 for many archetypes.
+    Updated the "while you were away" toast notification windows to now use pips.
+    Updates to skill tooltip - decreasing spacing in the stat area, making stat titles smallcaps, making additional key info at the bottom smaller.
+    Crafting:
+    Updating parcel recipes to now use specific parcels instead of a parcel category size.
+    Added Cartography and Cartography Components to Crafting Menu recipes for creating a blank map. 
+    Removed old siege recipes from crafting list.
+    Added a new reagent called Enriched Mulch for new siege recipes.
+    Added new siege recipes Enriched Mulch, Seed of Life, and Banewood Tree.
+    Replaced gear reagent with polished gemstone for Ballista and Catapult blueprint recipes.
+    Added Unobtainium component to Focus Orb crafting recipes. 
+    Updating experimentation for weapon crafting components to now use a single damage line instead of the Min/Max double lines during experimentation for the following items:
+        Arrowhead Bundle: Crushing
+        Arrowhead Bundle: Piercing
+        Arrowhead Bundle: Slashing
+        Weapon Hilt
+        Great Weapon Hilt
+        Weapon Blade: Long
+        Weapon Blade: Medium
+        Weapon Blade: Short
+        Weapon Blade: Thin
+        Weapon Blade: Great
+        Weapon Blade: Curved
+        Weapon Head: Mace
+        Weapon Head: Great Mace
+        Weapon Head: Axe
+        Weapon Head: Great Axe
+        Weapon Head: Hammer
+        Focus Orb Shell
+        Book Bound Chapters
+        Pistol Barrel
+        Pistol Body
+
+Disciplines:
+
+Major Disciplines: 
+
+    It is now easier to hit with single target attacks. Affects Adjudicate, Prosecute, Shadow Mantle, Retribution Slash, Aegis of Salvation, Frighten, Poisoned Blade, Warp Metal, Get ‘Em, Decay, Festering Wounds, Shrivel, Brutal Slam.
+
+Weapon Disciplines: 
+
+    It is now easier to hit with single target attacks. Affects Demolish Armor, Furious Slash, Bow Shot, Crippling Stab, Slow Demise, Skullcracker, Reverberating Blow, Wounding Slice, Pummel, Harass, Clobber, Restoration Smash, Hundred Staff Thrust, Critical Slice, Cut and Thrust, Critical Hack, Shield Glare, Restoration Strike.
+
+Specific Disciplines:
+
+Field Surgeon: 
+
+    Corrected an issue preventing the Noble Purpose resource restoration effect from happening.
+    Noble Purpose no longer works on yourself and can only trigger once every 15 seconds.
+    Rehabilitation now only heals your target.
+
+Master of Focus: 
+
+    The pushback effect from Nova can only affect a target once and tuned damage to match ticks and duration of the effect. Added stack group and tags.
+
+Firewalker: 
+
+    Reflect Heat adds 25 Fire Armor.
+
+Master of Pistols: 
+
+    Reduced the initial delay before the first pulse of Rapidfire so it's a little easier to score an expose punish on attacking targets.
+
+Powers:
+
+    Blocking and Parrying no longer prevent control effects when exposed.
+    Updated stat mods on the root of many powers to be consistent for cooldowns and resource cost.
+Classes:
+
+Champion:
+
+    It is now easier to hit with single target melee attacks. Affects Smash(es), Punch(es), Disarming Shout, Massive Cleave, Kick Sand, Rend, Vicious Stomp, and Spinning Backfist.
+
+Duelist: 
+
+    It is now easier to hit with single target melee attacks. Affects Saber Attack(es), Impale, Ambush and Punch(es).
+    Fixed a bug with The duelist defensive stats in the archetype tree not applying correctly. The defensive stats should now be negative. 
+
+Druid
+
+    Fixed tooltip for Ironwood body to reflect reality and replaced manually entered tokens with actual words. Reduced mitigation amount to 75% which is the cap.
+
+Knight:
+
+    It should now be easier to hit with single target melee abilities. Affects Shield Swipe, Shield Stun, Ruby Slash etc, Onslaught, Brutal Strike, Shield Bash, Punch.
+
+Legionnaire: 
+
+    It is now easier to hit with single target melee attacks. Affects Bellow of Triumph, Strike(s), No Quarter, Uppercut, Sunder Armor, Drive and Punch(es).
+    Corrected the self healing amount for Legionnaire Aim Heal ability, which was using old scales.
+
+Myrmidon: 
+
+    It is now easier to hit with single target melee attacks. Affects Slash(es), Bloodied Swipe, Gore, Colossus Smash, Cast Net, Net Pull, Pulverize and Punch(es).
+
+Ranger: 
+
+    It is now easier to hit with single target melee attacks. Affects Cross Slash, Disengage, Jab, Laceration, Slash(es), Sweep, Tendon Slice, Twin Surge and Punch(es).
+
+Templar: 
+
+    It is now easier to hit with single target melee attacks. Affects Great Swing, Censure, Judgement, Execute and Punch(es).
+    Templar Ultimate abilities can now be used while Stunned, Knocked Down or Suppressed.
+    Templar cannot gain Supercharge while the Health buff from Brilliance is active.
+
+Known Issues:
+
+    Durability in crafted items is not properly carrying up the crafting chain.
+    Non Ranger classes lack bow animations. All bow related disciplines will remain inactive until they do.
+    Bard Speed Song cancels when entering combat.
+    Bard Speed Song remains at combat buff amounts if the buff was placed on you and you were in combat mode then went into non combat movement speed (waiting on race/class split to fix this one).
+    Vessel inventory objects can not be used at a Temple.
+    Weapon disciplines that grant weapon equips will not be fully functional until animations are added. 
+    Power adjustments have been made but updates to tooltips are still in process. Text descriptions may not completely coincide with their current functionality.
+    Character Carousel has been disabled from the front end menu for now.
+    Sizing and rotation on harvesting tools during harvesting animations are incorrect. 
+    UI bug: Sometimes when a player logs in the Chicken Ticker (Hunger Meter) below the health bar appears incorrectly. 
+    Power Cost Multiplier issues with dual wield weapons are present. Currently investigating and working on improvements. 
+    Final Power Cost Multiplier is not properly calculating gains from skill trees.
+    Legionnaires now have Noble Purpose passive granted by default. This is a known issue and should be fixed next update.
+    Frame rate performance is lower than ideal.
