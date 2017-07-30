@@ -1,0 +1,99 @@
+Welcome to Crowfall Pre-Alpha Build 5.2.1
+Welcome to Campaign World System Test (week 2)!
+
+To report any issues, bugs, or feedback you have for this playtest session, please go here: Playtest Bug Reports and Feedback
+
+When reporting issues please try to be as detailed as possible (i.e. Campaign World, or Eternal Kingdom, Character Class, what power/status effect was active, etc). 
+
+A more robust list of known issues has been updated. Please refer to this before reporting any bugs or if you encounter any issues during your playtest session. 
+
+Database Status:
+
+Backer Rewards and Purchases were reset (please redeem them again in the lobby.  NOTE that you can only redeem rewards in EITHER the Live OR the Test environment!)
+TinyTyranny Campaign World map was reset (including all characters).
+Spirit Bank was wiped of purchases, but not collected items (to facilitate testing of Import restrictions).
+All Eternal Kingdoms were reset.
+
+Campaigns:
+We fixed a LOT of Campaign issues this week!  Some specific fixes include:
+
+Fixed a number of wall and tower assets that were appearing invisible.
+Locked the gates (only the members of the owning faction can go through them).
+The act of capturing a fort or keep will now BREAK players out of stealth.
+Most interactions will now break stealth.  Exceptions include interacting with corpses and containers, and teleporting through gates (in forts and keeps).
+Hippos should no longer show the "build area blocked" icon on the timer.
+General improvements to hippo interactions. 
+Fixed an issue with aiming catapults, floating catapults, a display issue with projectiles, and a camera issue with rotating catapults.
+Players will no longer be stuck inside of a catapult when they use it.  
+Corrected the problem with a player dying on or near the catapult interaction and blocking other players from interacting with it (note: see known issues below for caveats!)
+Fixed broadcast message issue relating to changes in the ownership of Keeps and Forts.
+
+General:
+
+Fixed a calculation error which caused child attributes to get 200% of their attribute modifiers.
+Players can no longer invite themselves into their own group.
+Fixed an issue with the plentiful harvest diamonds that appear on harvestable resources are not visible.
+Addressed an issue with the main menu advanced settings scroll bar does not get bigger when hitting the plus button. 
+Advanced graphic settings should now be saved and applied.  
+Fixed jumping issues that made it possible to jump up and over a wall.
+Jumping has been improved to be much more responsive to control while falling.
+Holding F to release should no longer loop the hold timer, which could sometimes cause weird things to happen on death.
+Securing trade window is now ready for functional testing!  To initiate a trade, use the command /trade <playername> in the command window.  This will cause a Trade Request to appear in the ME tab of the target player’s Chat Window.  To accept a trade request, click that notification.  Note that currently trade is only allowed between players of the same Faction can trade (this restriction will likely change between rulesets!)
+Added monsters to TinyTyranny (and as a result, enabled skinning/leather)
+Fixed conflict issue between overlapping F to Interacts (see known issues, below)
+For some powers, objects in the scene (barrels, lamps, etc) were absorbing damage intended for enemy combatants!  This has been fixed.
+Fixed issues with chat channels and focus of chat window.
+Fixed strange graphical issue caused by particular Ranger powers.
+Fixed strange graphical issue related to release of Crow on death.
+
+EK Tool:
+
+Players can no longer place parcels outside of the parcel grid in the EK tool.
+Fixed bug that was causing parcel to not be able to be dragged in on the outer edge of some sides of the grid.
+The world map is now completely revealed when viewing it in an EK.
+Contained buildings now spawn with the proper rotation relative relative to the building that contains them.
+
+Disciplines:
+
+Fixed an issue with disciplines data persisting on a character after being deleted/removed.
+
+Classes:
+
+Ranged Combat: Expanded the gather radius of abilities that use soft targeting, which makes aiming much more forgiving.
+Fixing as issue causing resource costs being spontaneously changed to "resource" instead mana/fury/stamina etc.
+Improvements made to the aiming mechanism of channeled and charged powers.
+Fixed an issue that caused players to be unable to use powers/abilities on powerblackout state.
+
+Druid:
+
+Nature's Avatar AttackActive flag remains for the duration of the entire channel instead of wearing off after 1+ second.
+
+Knight:
+
+Knight: Noble Blood now properly displays a buff icon for the barrier effect.
+
+Duelist:
+
+Fixed an issue where the burrow tray would be broken, and stealth state was inconsistent between client and server.
+
+Known Issues:
+
+TinyTyranny is a test map! This map was made very compact in order to minimize travel time for testers. Campaign maps will be much larger.  
+Logging out of the game while using a catapult can result in a broken login state!  DO NOT LOG OUT!
+Standing inside of a construction asset when the construction timer expires will sometimes result in an avatar being stuck inside the wall!  PLEASE REPORT this, including name of the asset.
+Chat disconnects may occur. If this happens, just exit to the lobby and rejoin, this will fix your chat state.
+Durability in crafted items is not properly carrying up the crafting chain.
+Non-Ranger classes lack bow animations. All bow related disciplines will remain inactive until they do.
+Bard Speed Song cancels when entering combat.
+Bard Speed Song remains at combat buff amounts if the buff was placed on you and you were in combat mode then went into non combat movement speed (waiting on race/class split to fix this one).
+Vessel inventory objects still can not be used at a Temple.
+Weapon disciplines that grant weapon equips will not be fully functional until animations are added. 
+Power adjustments have been made but updates to tooltips are still in process. Text descriptions may not completely coincide with their current functionality.
+Character Carousel has been disabled from the front end menu for now.
+Sizing and rotation on harvesting tools during harvesting animations are incorrect. 
+UI bug: Sometimes when a player logs in the Chicken Ticker (Hunger Meter) below the health bar appears incorrectly. 
+Power Cost Multiplier issues with dual wield weapons are present. Currently investigating and working on improvements. 
+Final Power Cost Multiplier is not properly calculating gains from skill trees.
+Legionnaires now have Noble Purpose passive granted by default. This is a known issue and should be fixed soon.
+Frame rate performance may be slightly lower in this version. 
+We found an issue with overlapping F to Interact radius, which made it hard to determine which object was being targeted.  We improved this greatly, but a much more robust solution will be coming in the next build.
